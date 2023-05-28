@@ -1,0 +1,56 @@
+#regist{
+    background: #61a0ff;
+    text-align: center;
+    padding: 6vh 4vw;
+}
+
+h1{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    font-size: 5vh;
+    font-weight: bold;
+    margin-block-start: 0.1em;
+    margin-block-end: 0em;
+}
+
+h4{
+    color: white;
+    font-size: 3vh;
+}
+
+p{
+    color: white;
+    font-size: 2vh;
+    margin-block-start: 8em;
+    margin-block-end: 3em;
+}
+
+#inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    gap: 1vh;
+}
+
+#inputs > label{ 
+    font-size: 2vh;
+}
+
+#inputs > input{
+    width: 40vh;
+    height: 5vh;
+    box-sizing: border-box;
+    border: .5vh solid rgb(0, 119, 255);
+    border-radius: 1vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2vh;
+    -webkit-transition: 0.5s;
+    transition: .2s;
+    outline: none;
+    margin-bottom: 2vh;
+    padding: 2% 4%;
+}
+#inputs > input:focus{    
+    border: 0.3vh solid #2308be;
+}

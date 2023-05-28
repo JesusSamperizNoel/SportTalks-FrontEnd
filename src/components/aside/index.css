@@ -1,0 +1,111 @@
+#aside{
+    grid-area: aside;
+    background-color: #5069f2;
+    padding: 0% 5%;
+    margin: 0% 3%;
+    max-width: 24vw;
+    max-height: 75vh;
+    width: 24vw;
+    height: 80vh;
+    border-style: groove;
+    border-color: #160092;
+    border-radius: 1%;
+}
+#aside > h3{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    font-size: 3vh;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.2em;
+    padding-left: 15%;
+}
+#newTalks{
+    display: flex;
+    flex-direction: column;
+}
+button > span{
+    text-decoration:none;
+}
+.newTalkButton{
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 2vh;
+    background-color: rgb(147, 206, 255);
+    border: none;
+    color: #160092;
+    text-align: center;
+    font-family: Arial, Helvetica;
+    font-weight: 800;
+    font-size: 90%;
+    padding: 5%;
+    max-width: 85%;
+    margin: 0% 0% 4% 8%;
+    transition: all 0.8s;
+    cursor: pointer;
+}
+.newTalkButton span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 1s;
+}
+.newTalkButton span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -25%;
+    transition: 0.5s;
+}
+.newTalkButton:hover span{
+    padding-right: 20%;
+}
+.newTalkButton:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+
+#talks{
+    overflow: scroll;
+    width: 100%;
+    height: 45vh;
+}
+.talkButton{
+    width: 80%;
+    display: inline-block;
+    border: none;
+    border-radius: .5vh;
+    display: block;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    color: #160092;
+    font-family: Arial, Helvetica;
+    font-weight: 600;
+    font-size: 90%;
+    background-color: #7cd3ff;
+    padding: 3% 8% 3% 8%;
+    margin: 0% 0% 4% 12%;
+}
+.talkButton span{
+    position: relative;
+    z-index: 1;
+}
+.talkButton:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 800%;
+    width: 450%;
+    background: #000dff;
+    -webkit-transition: all 0s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-transform: translateX(-100%) translateY(-25%) rotate(45deg);
+    transform: translateX(-100%) translateY(-25%) rotate(45deg);
+}
+.talkButton:hover:after{
+    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}

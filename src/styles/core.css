@@ -1,0 +1,33 @@
+#root{
+    background: #3f58e6;
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'aside main main'
+    'footer footer footer';
+    grid-template-columns: 1fr, 3fr;
+}
+
+
+/*Estilos para las scrollbars*/
+::-webkit-scrollbar {
+    width: 16px;
+    height: 0px;
+}
+::-webkit-scrollbar-track {
+    background: rgb(160, 212, 255);
+    border-radius: 12px;
+}
+::-webkit-scrollbar-thumb {
+    background: rgb(92, 122, 255);
+    border-radius: 12px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #1c2cbac5;  
+}
+::-webkit-scrollbar-corner {
+    background: rgb(92, 122, 255);
+}
+::-webkit-scrollbar-track:vertical {
+    background: -webkit-linear-gradient(top, rgb(226, 242, 255), rgb(160, 212, 255)); 
+}

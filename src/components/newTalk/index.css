@@ -1,0 +1,143 @@
+main{
+    grid-area: main;
+    background-color: #5069f2;
+    max-width: 65vw;
+    max-height: 70vh;
+    width: 65vw;
+    height: 100vh;
+    border-style: groove;
+    border-color: #160092;
+    border-radius: 1%;
+    padding: 2% 2%;
+    margin: 2% 2% 8% 3%;
+    align-content: center;
+}
+
+main > h3{
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT';
+    font-size: 3vh;
+    margin-block-start: 0.1em;
+    margin-block-end: 0em;
+    padding-left: 35%;
+}
+
+#inputs{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    gap: 1.5vh;
+}
+
+#inputs > label{ 
+    font-size: 2vh;
+}
+
+#inputs > input{
+    width: 40vh;
+    height: 5vh;
+    box-sizing: border-box;
+    border: .5vh solid rgb(0, 119, 255);
+    border-radius: 1vh;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2vh;
+    -webkit-transition: 0.5s;
+    transition: .2s;
+    outline: none;
+    margin-bottom: 2vh;
+    padding: 2% 4%;
+}
+
+#inputs > input:focus{    
+    border: 0.3vh solid #2308be;
+}
+
+#inputs > p {
+    color: rgb(255, 0, 0);
+}
+
+#buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 2vw;
+}
+
+#buttons > button {
+    display: inline-block;
+    padding: 1vh 1vw;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5vh;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #0026ff;
+    background-color: #daf3ff;
+    border: none;
+    border-radius: 1vh;
+    box-shadow: 0 1vh #e6e6e6;
+    max-width: 18vw;
+    max-height: 5vh;
+}
+
+#buttons > button:hover {
+    background-color: #2308be;
+    color: #daf3ff;
+}
+
+#buttons > button:active {
+  background-color: #daf3ff;
+  box-shadow: 0 .5vh #008cff;
+  color: #008cff;
+  transform: translateY(.2vh);
+}
+
+#results{
+    overflow: scroll;
+    width: 80%;
+    height: 40vh;
+    margin-top: 5vh;
+    align-content: center;
+    text-align: center;
+}
+
+#results > button{
+    width: 40%;
+    display: inline-block;
+    border: none;
+    border-radius: .5vh;
+    display: block;
+    cursor: pointer;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    color: #160092;
+    font-family: Arial, Helvetica;
+    font-weight: 600;
+    font-size: 90%;
+    background-color: #7cd3ff;
+    padding: 3% 8% 3% 8%;
+    margin: 0% 0% 4% 12%;
+}
+#results > button span{
+    position: relative;
+    z-index: 1;
+}
+#results > button:after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 800%;
+    width: 450%;
+    background: #000dff;
+    -webkit-transition: all 0s ease-in-out;
+    transition: all .5s ease-in-out;
+    -webkit-transform: translateX(-100%) translateY(-25%) rotate(45deg);
+    transform: translateX(-100%) translateY(-25%) rotate(45deg);
+}
+#results > button:hover:after{
+    -webkit-transform: translateX(-9%) translateY(-75%) rotate(45deg);
+    transform: translateX(-9%) translateY(-75%) rotate(45deg);
+}
