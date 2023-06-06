@@ -74,7 +74,7 @@ export default function SignUp({URL}) {
             <h1>Sport Talks</h1>
             <h4>Talk and run</h4>
             <p>Please register a user on the platform</p>
-            <button id='buttonSubmit'><Link to={"/"}>I already have an account</Link></button>
+            <Link to={"/"}><button className='button' id='buttonSubmit'>I already have an account</button></Link>
             <div id='inputs'>
                 <label htmlFor="nameInput">Enter your name:</label>
                 <input id='nameInput' type="text" required onChange={(e) => setName(e.target.value)}/>

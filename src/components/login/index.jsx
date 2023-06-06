@@ -67,7 +67,7 @@ export default function Login({URL}) {
         <div id='login'>
             <h1>Sport Talks</h1>
             <h4>Talk and run</h4>
-            <button id='buttonSubmit'><Link to={"/signIn"}>Don't have an acount?</Link></button>
+            <Link to={"/signIn"}><button className='button' id='buttonSubmit'>Don't have an acount?</button></Link>
             <div id='inputs'>
                 <label htmlFor="userInput">Enter a user:</label>
                 <input id='userInput' type="text" onChange={(e) => {setName(e.target.value)}}/>
@@ -75,7 +75,7 @@ export default function Login({URL}) {
                 <input id='passInput' type="password" onChange={(e) => {setPassword(e.target.value)}}/>
                 <p>{inputsResponse}</p>
             </div>
-            <button id='buttonSubmit' onClick={checkUser}>Go to Talk</button>
+            <button className='button' id='buttonSubmit' onClick={checkUser}>Go to Talk</button>
         </div>
     )
 }
