@@ -6,8 +6,8 @@ header{
 header > h1{
     color: white;
     font-family: 'Gill Sans', 'Gill Sans MT';
-    font-size: 5.5vh;
-    margin-block-start: .8em;
+    font-size: 7vh;
+    margin-block-start: .5em;
 }
 header > h4{
     color: white;

@@ -3,7 +3,9 @@ import './index.css'
 //React:
 import { useState } from 'react'
 
-export default function Main({URL, messages, setReload}) {
+export default function Main({messages, setReload}) {
+
+    const URL = "http://localhost:8080"
   
     const userLS = JSON.parse(localStorage.getItem("sesUser"))
     const talkLS = JSON.parse(localStorage.getItem("selectedTalk"))
@@ -37,7 +39,7 @@ export default function Main({URL, messages, setReload}) {
 
     return(
         <main>
-        <h3>Grupo8</h3>
+        <h3>Chat</h3>
         <ul id='messages'>
         { messages[0] ? (
                 <>

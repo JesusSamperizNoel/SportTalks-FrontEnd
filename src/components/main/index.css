@@ -21,7 +21,7 @@ main > h3{
 }
 
 main > ul{
-    height: 55vh;
+    height: 48vh;
     overflow: scroll;
 }
 main > ul > li{
@@ -30,7 +30,7 @@ main > ul > li{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.5vh;
     width: max-content;
-    max-width: 52vw;
+    max-width: 48vw;
     border-radius: 5vh;
     padding: 1% 3%;
     margin: 0% 2% 1.5% 3%;
@@ -40,8 +40,8 @@ main > ul > li{
     width: 45vw;
     height: 7vh;
     max-width: 85%;
-    padding: 2% 4%;
-    margin: 0.2% 5%;
+    padding: 0% 4%;
+    margin: 0.1% 5%;
     box-sizing: border-box;
     border: 0.2vw solid #ccc;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
